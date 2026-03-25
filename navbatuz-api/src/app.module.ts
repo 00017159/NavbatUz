@@ -7,6 +7,8 @@ import { AppService } from './app.service';
 import { PrismaModule } from './prisma/prisma.module';
 import { TelegramModule } from './telegram/telegram.module';
 import { AuthModule } from './auth/auth.module';
+import { DoctorsModule } from './doctors/doctors.module';
+import { AppointmentsModule } from './appointments/appointments.module';
 
 @Module({
   imports: [
@@ -26,6 +28,8 @@ import { AuthModule } from './auth/auth.module';
     PrismaModule,
     TelegramModule,
     AuthModule,
+    DoctorsModule,
+    AppointmentsModule,
   ],
   controllers: [AppController],
   providers: [
